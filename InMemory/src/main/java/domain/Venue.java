@@ -1,4 +1,4 @@
-package com.company.InMemory.domain;
+package domain;
 
 public class Venue {
     private Long id;
