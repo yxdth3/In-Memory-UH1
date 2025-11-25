@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package service;
 
 import domain.Event;
@@ -36,6 +33,7 @@ public class EventService {
         if (!repository.existsById(id)) {
             throw new NotFoundException("Event not found");
         }
+        event.setId(id);
         return (Event) repository.save(id, event);
     }
 

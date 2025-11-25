@@ -1,12 +1,11 @@
 package repository;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 import java.util.concurrent.atomic.AtomicLong;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public class EventRepository <Event>{
     private final Map<Long, Event> storage = new HashMap<>();
     private final AtomicLong idCounter = new AtomicLong(1);
@@ -23,6 +22,7 @@ public class EventRepository <Event>{
         if (id == null) {
             id = idCounter.getAndIncrement();
         }
+        entity.setId(id);
         storage.put(id, entity);
         return entity;
     }

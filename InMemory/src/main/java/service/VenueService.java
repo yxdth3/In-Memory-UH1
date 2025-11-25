@@ -36,6 +36,7 @@ public class VenueService {
         if (!repository.existsById(id)) {
             throw new NotFoundException("Venue not found");
         }
+        venue.setId(id);
         return (Venue) repository.save(id, venue);
     }
 
