@@ -2,13 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package service;
+package com.company.InMemory.service;
 
-import domain.Venue;
+import com.company.InMemory.domain.Venue;
 import java.util.List;
 import org.springframework.stereotype.Service;
-import repository.VenueRepository;
-import web.exception.NotFoundException;
+import com.company.InMemory.repository.VenueRepository;
+import com.company.InMemory.exception.NotFoundException;
 
 
 @Service

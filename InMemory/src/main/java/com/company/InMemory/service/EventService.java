@@ -1,11 +1,11 @@
 
-package service;
+package com.company.InMemory.service;
 
-import domain.Event;
-import repository.EventRepository;
+import com.company.InMemory.domain.Event;
+import com.company.InMemory.repository.EventRepository;
 import org.springframework.stereotype.Service;
 import java.util.List;
-import web.exception.NotFoundException;
+import com.company.InMemory.exception.NotFoundException;
 
 @Service
 public class EventService {

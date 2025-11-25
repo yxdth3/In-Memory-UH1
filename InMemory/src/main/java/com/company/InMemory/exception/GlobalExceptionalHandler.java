@@ -1,4 +1,4 @@
-package web.exception;
+package com.company.InMemory.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,4 +1,4 @@
-package domain;
+package com.company.InMemory.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
